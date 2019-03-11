@@ -1,3 +1,18 @@
+/* QUESTION - Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice. */
+
+//ALGORITHM PSEUDO-CODE
+
+/* Get each element from the Array.
+    Compare the value(Target-element) to all the previous Array elements.
+        if result = TRUE, save the value of index of the element and index of value(Target-element).
+        else
+    Continue loop to next element of Array
+End */
+
+
+
+
 #include <iostream>
 using namespace std;
 
