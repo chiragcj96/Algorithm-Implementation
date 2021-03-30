@@ -1,4 +1,4 @@
-# Two Sum
+# Palindrome Number
 
 Given an integer x, return true if x is palindrome integer.
 
