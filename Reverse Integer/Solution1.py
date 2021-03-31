@@ -3,6 +3,7 @@ class Solution(object):
         """
         :type x: int
         :rtype: int
+        ""By applying mathematical formula and generating the integer back in reverse order""
         """
         result = 0                                      #The final result
         multiplier = 10                                 #to reconstruct the result from individually extracted digits
