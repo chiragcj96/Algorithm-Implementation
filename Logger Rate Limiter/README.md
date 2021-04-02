@@ -27,29 +27,29 @@ Input: x = -121
 Output: false
 
 Explanation: 
-Logger logger = new Logger();
+    Logger logger = new Logger();
 
-logger.shouldPrintMessage(1, "foo");  // return true, next allowed timestamp for "foo" is 1 + 10 = 11
+    logger.shouldPrintMessage(1, "foo");  // return true, next allowed timestamp for "foo" is 1 + 10 = 11
 
-logger.shouldPrintMessage(2, "bar");  // return true, next allowed timestamp for "bar" is 2 + 10 = 12
+    logger.shouldPrintMessage(2, "bar");  // return true, next allowed timestamp for "bar" is 2 + 10 = 12
 
-logger.shouldPrintMessage(3, "foo");  // 3 < 11, return false
+    logger.shouldPrintMessage(3, "foo");  // 3 < 11, return false
 
-logger.shouldPrintMessage(8, "bar");  // 8 < 12, return false
+    logger.shouldPrintMessage(8, "bar");  // 8 < 12, return false
 
-logger.shouldPrintMessage(10, "foo"); // 10 < 11, return false
+    logger.shouldPrintMessage(10, "foo"); // 10 < 11, return false
 
-logger.shouldPrintMessage(11, "foo"); // 11 >= 11, return true, next allowed timestamp for "foo" is
+    logger.shouldPrintMessage(11, "foo"); // 11 >= 11, return true, next allowed timestamp for "foo" is
 
-                                      // 11 + 10 = 21
+                                        // 11 + 10 = 21
 
 
 ### Constraints:
 
-0 <= timestamp <= 109
+    0 <= timestamp <= 109
 
-Every timestamp will be passed in non-decreasing order (chronological order).
+    Every timestamp will be passed in non-decreasing order (chronological order).
 
-1 <= message.length <= 30
+    1 <= message.length <= 30
 
-At most 104 calls will be made to shouldPrintMessage.
+    At most 104 calls will be made to shouldPrintMessage.
