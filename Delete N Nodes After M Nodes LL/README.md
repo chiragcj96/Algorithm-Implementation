@@ -1,4 +1,4 @@
-# Palindrome Number
+# Delete N Nodes After M Nodes LL
 
 Given the head of a linked list and two integers m and n. Traverse the linked list and remove some nodes in the following way:
 
