@@ -1,10 +1,17 @@
-# Time limit exceeded - Brute Force
-
 """
 The algo is to check each ele with its next ele and swap if not ascending
-We use Recursion for iterating through all eles repeatedly until full sorted
+We use Recursion for iterating through all eles repeatedly until fully sorted
 We use "flag" as the stopping point as and when we find flag=0, we stop recursing
+
+--Start first recursion
+2,3,7,4,6,5
+2,3,4,7,6,5
+2,3,4,6,7,5     __ended first
+--Start second recursion
+2,3,4,6,5,7
+2,3,4,5,6,7     __ended second
 """
+
 
 class Solution(object):
     def merge(self, nums1, m, nums2, n):
