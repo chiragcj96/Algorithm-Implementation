@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
         length = len(nums1)-1                       # length=6 or m+n 
-        #length = m+n 
+        #length = m+n-1 
         while m > 0 and n > 0:                      # Run till the length goes to zero
             # print(nums1[m-1], nums2[n-1], length) 
             if nums1[m-1] >= nums2[n-1]:            # index = length-1, iterate through all eles comparing them
