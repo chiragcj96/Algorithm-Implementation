@@ -3,6 +3,8 @@ The algo is to check each ele with its next ele and swap if not ascending
 We use Recursion for iterating through all eles repeatedly until fully sorted
 We use "flag" as the stopping point as and when we find flag=0, we stop recursing
 
+""Bubble Sort""
+
 --Start first recursion
 2,3,7,4,6,5
 2,3,4,7,6,5
@@ -24,7 +26,6 @@ class Solution(object):
         """
         flag = 1
         nums1[m:] = nums2                           #merging the two arrays
-        nums1.sort()
 
         print("nums1 after initial merge", nums1)
 
