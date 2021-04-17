@@ -29,3 +29,9 @@ class Solution(object):
             n = getSquared(n)
     # -----------------------------------
     '''
+
+    '''
+    Time complexity : O(243 * 3 + log n + loglog n + logloglog n)... = O(log n).
+    Finding the next value for a given number has a cost of O(log n) because we are processing each digit in the number, and the number of digits in a number is given by nlogn.
+
+    Space complexity : O(log n). Closely related to the time complexity, and is a measure of what numbers we're putting in the HashSet, and how big they are. For a large enough n, the most space will be taken by n itself.
