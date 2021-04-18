@@ -1,3 +1,10 @@
+'''
+Using a list of non-alphaNumeric characters (Check next sol for going aroung using List)
+Using TWO-POINTERS
+Time complexity : O(n)
+Space complexity : O(n)
+'''
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         punctuations = '''!()-[]{};:' "\`,<>./?@#$%^&*_~'''
