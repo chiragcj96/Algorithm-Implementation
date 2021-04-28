@@ -27,6 +27,9 @@ class Solution:
 '''
 Time complexity = More than other option as you loop through dic values
 Space complexity = It will be better as only one dictionary is reqd
+
+Time complexity : O(1). because accessing the dictionary is a constant time operation.
+Space complexity : O(1). Although we do use extra space, the space complexity is O(1) because the dictionary's size stays constant no matter how large n is.
 ''' 
 
         
