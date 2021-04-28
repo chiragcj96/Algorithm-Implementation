@@ -6,12 +6,6 @@ Space Complexity: O(1). Space depends on the sorting implementation which, usual
 '''
 
 class Solution:
-    def isAnagram(self, ss: str, tt: str) -> bool:
-        if len(ss)!=len(tt):
-            return False
-        ss = list(ss)
-        tt = list(tt)
-        ss.sort()
-        tt.sort()
-        # print(ss, tt)
-        return ss==tt
+    def isAnagram(self, s: str, t: str) -> bool:
+g
+        return sorted(s)==sorted(t)
