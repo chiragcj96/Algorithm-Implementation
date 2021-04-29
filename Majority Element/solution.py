@@ -1,6 +1,9 @@
 '''
 We create a dict of all unique ele and their count
 We then find that key with value greater or equal to len(nums)/2 and return the key
+
+Time complexity : O(n). iterate over nums once and make a constant time HashMap insertion on each iteration. 
+Space complexity : O(n) At most, the HashMap associations, so it occupies O(n)O(n) space.
 '''
 
 class Solution:
