@@ -6,18 +6,20 @@ rightSum = sum of right side for index i
 And we update them each time we iterate to next index.
 As soon as we find equal sums, we return the index.
 
+Time Complexity: O(N), where N is the length of nums.
+Space Complexity: O(1), the space used by leftsum and S.
 
 '''
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
-        i, leftSum = 0, -nums[0]
-        rightSum = sum(num for num in nums)
+        leftSum = 0
+        rightSum = sum(nums)
         
         for i in range(len(nums)):
-            leftSum += nums[(i-1 if i-1>-1 else 0)]
             rightSum -= nums[i]
             if leftSum == rightSum:
                 return i
+            leftSum += nums[i]
         return -1
             
         
