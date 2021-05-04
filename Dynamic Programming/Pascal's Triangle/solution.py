@@ -8,6 +8,9 @@ This populates the whole matrix with correct values
 
 Then we just run for all the levels of the triangles(0->numRows), then for each (x, numRows-x) pairs, we append the values to result
 Return result
+
+Time: O(N^2)
+Space: O(N^2)
 '''
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
