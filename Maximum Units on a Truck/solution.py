@@ -12,13 +12,13 @@ class Solution:
                 boxTypes[i][0] -= 1
         return count
 
-
 '''
 Using Lambda function
 '''
 
     def maximumUnits(self, boxTypes: List[List[int]], truckSize: int) -> int:
         boxTypes.sort(key=lambda x: -x[1])
+        # boxTypes.sort(key=lambda x:x[1],reverse=1)
         ans = 0
         for box, units in boxTypes:
             if truckSize > box:
@@ -28,5 +28,20 @@ Using Lambda function
                 ans += truckSize * units
                 return ans
         return ans 
+
+'''
+Using Lambda function
+'''
+class Solution:
+    def maximumUnits(self, boxTypes: List[List[int]], truckSize: int) -> int:
+        boxTypes.sort(key=lambda x:x[1],reverse=1)
+        s=0
+        for i,j in boxTypes:
+            i=min(i,truckSize)
+            s+=i*j
+            truckSize-=i
+            if truckSize==0:
+                break
+        return s
 
         
