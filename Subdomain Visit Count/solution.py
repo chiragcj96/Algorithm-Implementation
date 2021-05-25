@@ -21,7 +21,7 @@ class Solution(object):
                 dict[subDomain[-1]] = dict.get(subDomain[-1], 0) + int(number)
             
             # print(number, domain, partDomain[-1], subDomain[-1])
-            print dict       
+            print(dict)       
         result = []
         for key in dict:
             result.append(str(dict[key]) + " " + str(key))
